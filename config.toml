@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Hugo Portfoliosite"
 theme = "hugo-agency-theme"
+publishDir = "docs"
 
 
 [params]
