@@ -1,0 +1,170 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Hugo Portfoliosite"
+theme = "hugo-agency-theme"
+
+
+[params]
+    favicon = "img/favicon.png"
+
+
+# Navigation
+[params.navigation]
+    logo = "logo.png"
+    services = "Services"
+    portfolio = "Portfolio"
+    about = "Tema'er"
+    team = "Om mig"
+    contact = "kontakt"
+
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://niels-gerdes.dk/kea/"
+      name = "Min website"
+      weight = 10
+
+
+
+ [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+
+# Hero section
+[params.hero]
+    header_background = "static/img/header-bg.jpg"
+    title = "Velkommen til mit nye Hugo Portfoliosite!"
+    subtitle = "KEA - 1. semester 2017"
+    buttonText = "Se mere"
+
+
+# Portfolio section
+[params.portfolio]
+    enable = true
+    title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.portfolio.modal]
+      client = "Link"
+      date = "Dato"
+      category = "Tema"
+      buttonText = "Luk projekt"
+
+
+# About section
+[params.about]
+    enable = true
+    title = "Tema'er"
+    subtitle = "En hurtig lille gennemgang"
+    endpoint = "Tema'er<br>1, 2, 3 og 4<br>2017!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.png"
+      date = "Tema 1"
+      title = "Basic Webdesign"
+      description = "Dette første tema giver en grundlæggende, men intensiv indføring til de mest grundlæggende redskaber i en multimediedesigners værktøjskasse. Redskaberne vil udgøre fundamentet for resten af uddannelsen på MMD."
+
+    [[params.about.events]]
+      img = "2.png"
+      date = "Tema 2"
+      title = "Basic Video"
+      description = "På dette tema skal de studerende arbejde med produktion af levende billeder i relation til 2 mindre produktioner. Temaet indeholder en introduktion til konceptudvikling med levende billeder, reportage, optage- og redigeringstekni."
+
+    [[params.about.events]]
+      img = "3.png"
+      date = "Tema 3"
+      title = "Basic Animation"
+      description = "I animation temaet introduceres der til animationsteknikker, både fra et visuelt og et teknisk implementations-synspunkt. Den studerende introduceres til karakterdesign, figuranimation og interaktiv storytelling."
+
+    [[params.about.events]]
+      img = "4.png"
+      date = "Tema 4"
+      title = "Basic UX"
+      description = "I første halvdel af temaet skal de studerende introduceres til forskellige metoder/teorier som gør dem i stand til at kunne planlægge, styre og gennemføre et udviklingsprojekt, hvor der skal løses en problemstilling ved hjælp af et app-design."
+
+
+  # Team section
+  [params.team]
+    enable = true
+    center = true
+    title = "Om mig"
+    subtitle = "Her kan du finde lidt om mig"
+    #description = ""
+
+    [[params.team.members]]
+      img = "mig.jpg"
+      name = "Niels Gerdes"
+      position = "Studerende på<br />Københavns Erhvervsakademi"
+      #reportsTo = "Københavns Erhvervsakademi"
+      livesIn = "[København, Danmark](https://www.google.dk/maps/place/K%C3%B8benhavn/@55.6711876,12.4537421,11z/data=!3m1!4b1!4m5!3m4!1s0x4652533c5c803d23:0x4dd7edde69467b8!8m2!3d55.6760968!4d12.5683372)"
+      bio = "Jeg er en meget positiv og imødekommende fyr på 27 år. Er uddannet mediegrafiker og studere nu på KEA som multimediadesigner."
+      social = [
+        ["fa-twitter", "https://twitter.com/zettir"],
+        ["fa-facebook", "https://www.facebook.com/zettir"],
+        ["fa-linkedin", "https://www.linkedin.com/in/zettir"]
+      ]
+
+
+# Contact section
+[params.contact]
+    enable = true
+    title = "Kontakt mig"
+    subtitle  = "Du er altid velkommen til at kontakte mig"
+    buttonText = "Send besked"
+
+    email = "niels.gerdes@gmail.com"
+
+    thanks = "Tak fordi du har kontaktet mig."
+    error = "Din besked kunne ikke sendes. Kontakt mig på niels.gerdes@gmail.com i stedet for."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Dit navn *"
+      warning = "Udfyld venligst med dit navn."
+
+    [params.contact.form.email]
+      text = "Din e-mail *"
+      warning = "Udfyld venligst med din e-mail addresse."
+
+    [params.contact.form.phone]
+      text = "Dit telefon nummer *"
+      warning = "Udfyld venligst med dit telefon nummer."
+
+    [params.contact.form.message]
+      text = "Din besked *"
+      warning = "Udfyld venligst med din besked."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Niels Krahmer Gerdes © 2018 - All Rights Reserved."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/zettir"
+      title = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/zettir"
+      title = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "https://www.linkedin.com/in/zettir"
+      title = "LinkedIn"
