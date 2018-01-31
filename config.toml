@@ -44,7 +44,7 @@ publishDir = "docs"
 [params.portfolio]
     enable = true
     title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = "4 af projekterne fra 1. semester"
 
     [params.portfolio.modal]
       client = "Link"
